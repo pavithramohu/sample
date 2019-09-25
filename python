@@ -1,0 +1,721 @@
+x=2
+y=3
+print("add:",x+y)
+print("exponent:",x**y)
+print("sub:",x-y)
+print("division:",x/y)
+print (x+y)
+print(x%y)
+print(x>=y)
+print("result:",x==y)
+print("result:",x!=y)
+y**=x+1
+print (y)
+print("x:",x)
+print("y:",y)
+x%=y
+print(x)
+y//=x
+print(y) 
+
+o/p
+add: 5
+exponent: 8
+sub: -1
+division: 0.6666666666666666
+5
+2
+False
+result: False
+result: True
+27
+x: 2
+y: 27
+2
+13
+
+
+
+a=5
+b=4
+if(a==b):
+    print(a)
+else:
+    print(b)
+    
+if True:
+    print("a")
+if False:
+ print("b")
+
+
+----------------------------------------------------------
+
+x=int(input("x="))
+y=int(input("y="))
+if x>y:
+    print("x")
+elif x<y: 
+    print("y")
+elif x<=y:
+    print("y")
+elif x>=y:
+    print("x")
+else:
+    print("y")
+
+o/p
+x=5
+y=6
+y
+
+----------------------------------------------------------
+x=int(input("x="))
+if x<101 and x>90:
+    print("s grade")
+elif x<90 and x>81: 
+    print("a grade")
+elif x<80 and x>71:
+    print("b grade")
+elif x<70 and x>61:
+    print("c grade")
+elif x<60 and x>51:
+    print("d grade")
+else:
+    print("fail")
+
+o/p
+x=87
+a grade
+----------------------------------------------------------
+x=int(input("x="))
+if x>0 and x<=100:
+    if x<=100 and x>=90:
+        print("s grade")
+    elif x<=90 and x>=81: 
+        print("a grade")
+    elif x<=80 and x>=71:
+        print("b grade")
+    elif x<=70 and x>=61:
+        print("c grade")
+    elif x<=60 and x>=51:
+        print("d grade")
+    
+if x<0:
+    print("negative mark")
+
+if x>100:
+    print("not valid")
+-----------------------------------------------------------
+salary=int(input("salary="))
+if salary<5000:
+    x=salary*0.5 
+    y=x+salary
+    print(y)
+elif salary>5000 and salary<10000:
+    x=salary*1.0
+    y=x+salary
+    print(y)
+elif salary>10000 and salary<15000:
+    x=salary*1.5 
+    y=x+salary
+    print(y)
+
+o/p
+  salary=6700                                                                                                                    
+7370.0   
+-----------------------------------------------------------
+year=int(input("enter year"))
+if year%4==0:
+    if year%100==0:
+        if year%400==0:
+            print("leap year")
+        else:
+             print("not leap year")
+    else:
+        print("leap year")
+else:
+    print("not a leap year")
+
+o/p
+enter year2100
+not leap year
+-----------------------------------------------------------
+number_1=int(input("enter number_1"))
+number_2=int(input("enter number_2"))
+number_3=int(input("enter number_3"))
+if number_1<number_2:
+    if number_2>number_3:
+        print("numb2 is greatest")
+    elif number_1<number_3:
+        if number_2<number_3:
+            print("numb3 is greatest")
+    else:
+         print("numb2 is greatest")
+else:
+    print("numb1 is greatest")
+       
+o/p:
+enter number_11                                                                                                                
+enter number_22                                                                                                                
+enter number_33                                                                                                                
+numb3 is greatest       
+----------------------------------------------------------                                                                                                      
+              
+20/9/19
+
+x=int(input("enter number:"))
+if x%2==0:
+    print('it is a even number')
+else:
+    print('it is an odd number')
+
+
+o/p
+enter number:7                                                                                                                 
+it is an odd number   
+
+---------------------------------------------------------
+
+year=int(input('enter year'))
+if year%4==0:
+    if year%100==0:
+        if year%400==0:
+            print('leap yr')
+        else:
+            print('not a leap yr')
+    else:
+        print('leap yr')
+else:
+    print('not a leap yr')
+
+
+o/p
+enter year2100                                                                                                                 
+not a leap yr  
+---------------------------------------------------------
+num1=int(input('enter num1'))
+num2=int(input('enter num2'))
+num3=int(input('enter num3'))
+if num1<num2:
+    if num2<num3:
+        print('num3 is greatest')
+    else:
+        print('num2 is greatest')
+elif num3>num1:
+    print("num3 is greatest")
+else:
+    print('num1 is greatest')
+
+o/p
+enter num3
+enter num2
+enter num1
+num1 is greatest
+----------------------------------------------------------
+looping 
+sum of natural numb
+
+sum=0
+for i in range(1,11):
+    sum=sum+i 
+print(sum)
+
+o/p
+55
+---------------------------------------------------------
+factorial
+fact=1
+for i in range(1,7):
+   fact=fact*i 
+print('ans',fact)
+
+o/p
+720
+----------------------------------------------------------
+sum of digits
+
+sum=0
+lastdig=0
+num=int(input('enter num'))
+if num>0:
+    for i in range(1,num):
+        lastdig=num%10
+        sum=lastdig+sum
+        num=num//10
+print(sum)
+
+o/p
+enter num123
+6
+----------------------------------------------------------
+reverse a num
+
+sum=0
+lastdig=0
+num=int(input('enter num'))
+if num>0:
+    for i in range(1,num):
+        lastdig=num%10
+        sum=sum*10+lastdig
+        num=num//10
+	if num==0:
+		break
+print(sum)
+Objects
+o/p
+enter num123
+321
+----------------------------------------------------------
+largest among five num
+
+large=0
+for i in range(1,6):
+    print('enter num',i)
+    num=int(input())
+    if large<num:
+        large=num
+print(large)
+
+o/p
+enter num 1
+56
+enter num 2
+567
+enter num 3
+4
+enter num 4
+9
+enter num 5
+3
+567
+
+
+---------------------------------------------------------
+prime or not
+
+count=0
+num=int(input('enter num'))
+for i in range(1,num+1):
+    if num%i==0:
+        count=count+1
+if count==2:
+    print('prime no')
+else:
+	print('not prime')
+
+o/p
+enter num23
+prime no
+--------------------------------------------------------
+for i in range(1,4):
+    for j in range(1,5):
+        print("A",end =" ")
+    print(" ")
+
+o/p
+A A A A  
+A A A A  
+A A A A  
+---------------------------------------------------------
+prime in range
+
+for num in range(50,101):
+    count=0 
+    for i in range(1,num+1):
+        if num%i==0:
+            count=count+1 
+    if count==2:
+        print(num)
+ o/p
+53
+59
+61
+67
+71
+73
+79
+83
+89
+97
+--------------------------------------------------------
+palindrome num
+
+num=int(input('enter num '))
+temp=num
+sum=0
+if num>0:
+    for i in range(1,4):
+         rem=num%10
+         sum=sum*10+rem
+         num=num//10
+    if temp==sum:
+        print('palindrome')
+    else:
+        print('not palindrome')
+
+o/p
+enter num 564
+not palindrome
+--------------------------------------------------------
+armstrong num
+
+
+num=int(input('enter num '))
+temp=num
+sum=0
+if num>0:
+    for i in range(1,4):
+         rem=num%10
+         sum=sum+rem**3
+         num=num//10
+    if temp==sum:
+        print('armstrong')
+    else:
+        print('not armstrong')
+      
+o/p
+enter num 153
+armstrong
+----------------------------------------------------------------
+factors of num
+
+num=int(input('enter num '))
+print('factors of num')
+for i in range(1,num):
+    if num%i==0:
+        print(i)
+   
+o/p
+enter num 24
+factors of num
+1
+2
+3
+4
+6
+8
+12
+---------------------------------------------------------------
+swapping with var
+
+num_1=int(input('enter num '))
+num_2=int(input('enter num '))
+temp=0
+temp=num_1
+num_1=num_2
+num_2=temp
+print(num_1,num_2)
+
+o/p
+enter num 4
+enter num 5
+5 4
+--------------------------------------------------------------
+swapping without var
+
+num_1=int(input('enter num '))
+num_2=int(input('enter num '))
+num_1=num_1+num_2
+num_2=num_1-num_2
+num_1=num_1-num_2
+print(num_1,num_2)
+
+o/p
+enter num 34
+enter num 56
+56 34
+
+--------------------------------------------------------------
+binary to decimal
+num=int(input('enter num '))
+res=0
+lastdig=0
+for i in range(0,4):
+    lastdig=num%10
+    res=res+lastdig*2**i 
+    num=num//10
+print(res)
+
+o/p
+enter num 1010
+10
+---------------------------------------------------------------
+fibonnaci series
+
+a=0
+b=1
+for i in range(1,11):
+    print(a,end= " ")
+    c=a+b 
+    a=b 
+    b=c
+
+o/p
+output 
+0 1 1 2 3 5 8 13 21 34 
+
+------------------------------------------------------------
+functions
+
+def sleep_in(weekday,vacation):
+    if not weekday or vacation:
+        
+        return True
+    else:
+        return False
+res=sleep_in(False,True)
+print(res)
+
+o/p
+True
+
+-------------------------------------------------------------
+def monkey_trouble(a_smile,b_smile):
+    if a_smile==b_smile:
+        return True
+    else:
+        return False
+res=monkey_trouble(False,False)
+print(res)
+
+o/p
+True
+-------------------------------------------------------------
+def sum_double(a,b):
+    if a==b:
+        return (a+b)*2
+    else:
+        return a+b
+res=sum_double(2,2)
+print(res)
+
+o/p
+8
+--------------------------------------------------------------
+
+def diff21(n):
+    if n>21:
+        return abs(n-21)*2
+    else:
+        return abs(n-21)
+res=diff21(21)
+print(res)
+
+o/p
+0
+------------------------------------------------------------
+def parrot_trouble(talking,n):
+    if talking and n<7 or n>20:
+        return True
+    else:
+        return False
+res=parrot_trouble(True,9)
+print(res)
+
+o/p
+False
+------------------------------------------------------------
+def cigar_party(weekend,n):
+    if (not weekend) and (n>=40 and n<=60) :
+        return True
+    elif weekend and n>40:
+        return True
+    else:
+        return False
+res=cigar_party(False,50)
+print(res)
+
+O/P
+True
+-------------------------------------------------------------
+
+def caught_speeding(speed,bday):
+    if speed<=60 and not bday:
+        return 0
+    elif speed>=65  and  bday:
+        return 0 
+    if (speed >=61 and speed<=80) and not bday:
+        return 1 
+    elif (speed >=65 and speed <=85) and bday :
+        return 1
+    else:
+        return 2
+res=caught_speeding(60,False)
+print(res)
+
+o/p
+0
+--------------------------------------------------------                                                                
+24/9/19
+
+for i in range(1,6):
+    for j in range(1,6):
+        if i>=j:
+            print(j,end=' ')
+    print(" ")
+ o/p
+1  
+1 2  
+1 2 3  
+1 2 3 4  
+1 2 3 4 5  
+--------------------------------------------------------
+ for i in range(1,6):   
+  for j in range(2,i+1):
+        print("-",end=" ")
+    for k in range(1,7-i):
+        print(k, end= " ")
+    print(" ")
+
+  
+for i in range(1,6):
+    for j in range(1,6-i):
+        print("-",end=" ")
+    for k in range(1,i+1):
+        print(k, end= " ")
+    print(" ")
+
+o/p
+1 2 3 4 5  
+- 1 2 3 4  
+- - 1 2 3  
+- - - 1 2  
+- - - - 1  
+- - - - 1  
+- - - 1 2  
+- - 1 2 3  
+- 1 2 3 4  
+1 2 3 4 5  
+----------------------------------------------------------
+LIST CONCEPTS
+
+list = ['A','B','C','D','E']
+print(list[0])
+print(list[0:3])
+print(list[-3:-1])
+print(list[::-1])
+print(list[2:])
+print(list[:4])
+
+o/p
+A
+['A', 'B', 'C']
+['C', 'D']
+['E', 'D', 'C', 'B', 'A']
+['C', 'D', 'E']
+['A', 'B', 'C', 'D']
+
+-----------------------------------------------------------
+list = ['A','B','C','D','E']
+print(len(list))
+list.pop(1)
+print(list)
+list.insert(1,'k')
+print(list)
+del(list[0])
+print(list)
+list.extend(['l','m','n'])
+print(list)
+del(list[2])
+print(list)
+list.remove('k')
+print(list)
+list.append('f')
+print(list)
+list.reverse()
+print(list)
+ o/p:
+5
+['A', 'C', 'D', 'E']
+['A', 'k', 'C', 'D', 'E']
+['k', 'C', 'D', 'E']
+['k', 'C', 'D', 'E', 'l', 'm', 'n']
+['k', 'C', 'E', 'l', 'm', 'n']
+['C', 'E', 'l', 'm', 'n']
+['C', 'E', 'l', 'm', 'n', 'f']
+['f', 'n', 'm', 'l', 'E', 'C']
+--------------------------------------------------------------
+25/9/19
+l=["tamil","english","maths","science","social","biology"]
+start=int(input("enter starting index"))
+end=int(input("enter ending index"))
+new_list=[]
+for i in range (0,3):
+    get= input()
+    new_list.append(get)
+print(new_list)
+for i in range (0,3):
+    l[start]=new_list[i]
+    start=start+1
+print(l)
+        
+o/p
+enter starting index2
+enter ending index4
+ethics
+politics
+zoology
+['ethics', 'politics', 'zoology']
+['tamil', 'english', 'ethics', 'politics', 'zoology', 'biology']
+
+---------------------------------------------------------------------
+l=["tamil","english","maths","science","social","biology"]
+start=int(input("enter starting index"))
+no_of_elements=int(input("enter no of elements to remove"))
+count=1 
+length=len(l)
+for i in  range(0,len(l)):
+    if start<=i and count<=no_of_elements:
+        l.pop(start)
+        length=length-1
+        count=count+1
+print(l)     
+o/p
+enter starting index2
+enter no of elements to remove3
+['tamil', 'english', 'biology']
+--------------------------------------------------------------------   
+l=[1,2,1,4,5,4,6]
+length=len(l)
+i=0
+while(i<=length):
+    for j in  range(i+1,length):
+        if l[i]==l[j]:
+            l.pop(j)
+            length=length-1
+            break
+    i=i+1 
+print(l)
+
+O/P
+[1, 2, 4, 5, 6]
+--------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+                
+            
+
+
+
+
+
+
+
+
